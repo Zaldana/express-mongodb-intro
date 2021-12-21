@@ -40,7 +40,7 @@ module.exports = {
         });
     },
 
-    updateRecipeById: (id, body, callback) => {
+    updateAnimalById: (id, body, callback) => {
         Recipe.findByIdAndUpdate(id, body, { new: true }, function (err, updatedRecipe) {
             if (err) {
                 callback(err, null);
